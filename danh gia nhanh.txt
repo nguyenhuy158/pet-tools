@@ -1,0 +1,2 @@
+for (let i = 0; i < 100; i++) 
+	$($(`#dl_ksat tr:nth-child(${i}) input[type="radio"]`)[4]).click()

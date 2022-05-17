@@ -1,0 +1,30 @@
+var script = document.createElement('script');
+script.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
+document.getElementsByTagName('head')[0].appendChild(script);
+
+$('.geS5n').each((index, elem) => {
+    // console.log(index);
+    // console.log($(elem).find('.docssharedWizToggleLabeledContainer'));
+    let button = $(elem).find('.docssharedWizToggleLabeledContainer');
+    
+    let random = Math.floor(Math.random() * (button.length - 1 + 1) + 0);
+    // console.log(random);
+    $(button[random]).click();
+})
+
+$('.ssX1Bd').each((index, elem) => {
+    // console.log($(elem).hasClass('KZt9Tc'));
+    if($(elem).hasClass('KZt9Tc')) {
+        return true;
+    }
+    
+    // console.log($(elem));
+    let button = $(elem).find('.x0k1lc');
+    console.log(button.length);
+    
+    let random = Math.floor(Math.random() * (button.length - 1 + 1) + 0);
+    // console.log(random);
+    $(button[random]).click();
+})
+
+$($($('.ssX1Bd')[2]).find('.x0k1lc')[Math.floor(Math.random() * 5)]).click()
