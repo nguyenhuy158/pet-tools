@@ -1,0 +1,3 @@
+$.each($('.320'), function() {
+    this.click();
+});
